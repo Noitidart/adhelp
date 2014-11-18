@@ -22,7 +22,9 @@ adhelpChrome1.BrowserOverlay = {
     var deck = document.createElementNS('http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul', 'deck');
     var props = {
       class: 'adhelp-deck',
-      style: 'height:300px; width:300px; background:-moz-radial-gradient(rgba(127, 127, 127, 0.5), rgba(127, 127, 127, 0.5) 35%, rgba(0, 0, 0, 0.7));'
+      style: 'height:300px; width:300px; background:-moz-radial-gradient(rgba(127, 127, 127, 0.5), rgba(127, 127, 127, 0.5) 35%, rgba(0, 0, 0, 0.7));',
+      top: 0,
+      left: 0
     };
     for (var p in props) {
       deck.setAttribute(p, props[p]);
